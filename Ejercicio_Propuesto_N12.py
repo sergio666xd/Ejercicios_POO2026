@@ -8,10 +8,8 @@ class EmployeeSalary:
 
 
 def main():
-	horas = input("Horas trabajadas (enter para 48): ")
-	horas = float(horas) if horas.strip() else 48.0
-	tarifa = input("Tarifa por hora (enter para 5000): ")
-	tarifa = float(tarifa) if tarifa.strip() else 5000.0
+	horas = 48.0
+	tarifa = 5000.0
 	salario_bruto, retencion, salario_neto = EmployeeSalary.calcular_salario(horas, tarifa)
 	
 	print(f"Salario bruto: {salario_bruto:,.2f}")

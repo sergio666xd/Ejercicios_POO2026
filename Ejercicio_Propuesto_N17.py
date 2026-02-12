@@ -11,12 +11,8 @@ class area_longitud:
 
 
 def main():
-    try:
-        entrada = input("Ingrese el radio del círculo: ")
-        r = float(entrada)
-    except Exception:
-        print("Entrada inválida. Terminando.")
-        return
+
+    r = float(input("Ingrese el radio del círculo: "))
 
     area = area_longitud.area(r)
     longitud = area_longitud.longitud(r)
